@@ -61,4 +61,18 @@ export const ticketsAPI = {
   updateStatus: (id: string, status: string) => api.patch(`/tickets/${id}/status`, { status }),
 };
 
+export const usersAPI = {
+  list:   (params?: object) => api.get('/users', { params }),
+  create: (data: object)    => api.post('/users', data),
+  update: (id: string, data: object) => api.put(`/users/${id}`, data),
+  delete: (id: string)      => api.delete(`/users/${id}`),
+};
+
+export const clinicsAPI = {
+  list:   (params?: object) => api.get('/clinics', { params }),
+  create: (data: object)    => api.post('/clinics', data),
+  update: (id: string, data: object) => api.put(`/clinics/${id}`, data),
+  delete: (id: string)      => api.delete(`/clinics/${id}`),
+};
+
 export default api;

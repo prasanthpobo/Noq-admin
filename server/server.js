@@ -14,6 +14,8 @@ app.use('/api/patients',     require('./routes/patients'));
 app.use('/api/doctors',      require('./routes/doctors'));
 app.use('/api/appointments', require('./routes/appointments'));
 app.use('/api/tickets',      require('./routes/tickets'));
+app.use('/api/users',        require('./routes/users'));
+app.use('/api/clinics',      require('./routes/clinics'));
 
 app.get('/api/health', (_, res) => res.json({ status: 'ok', time: new Date() }));
 
