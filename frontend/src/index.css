@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --brand-start: #1E4FA3;
+  --brand-mid:   #2C6ED5;
+  --brand-end:   #1FA3A8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #F5F8FC;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #1E4FA3 0%, #2C6ED5 50%, #1FA3A8 100%);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2C6ED5;
+  box-shadow: 0 0 0 3px rgba(44,110,213,0.12);
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #F5F8FC; }
+::-webkit-scrollbar-thumb { background: #C8D1DC; border-radius: 99px; }
